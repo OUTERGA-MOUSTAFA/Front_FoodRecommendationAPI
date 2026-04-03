@@ -29,7 +29,6 @@ function App() {
         const fetchPlats = async () => {
             try {
                 const res = await api.get("/plat");
-                console.log(res.data,'hello 1')
                 setPlats(res.data.data);
             } catch (err) {
                 setError(err.message);
